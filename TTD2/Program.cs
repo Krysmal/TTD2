@@ -1,7 +1,12 @@
 ﻿using System;
 using System.Collections.Generic; 
 using System.Linq;  
-public class ShoppingCart { private List<Item> items; 
+
+
+
+public class ShoppingCart 
+{   
+    private List<Item> items; 
     public ShoppingCart() { items = new List<Item>(); } 
     public void AddItem(string name, double price, int quantity) 
     {
@@ -27,5 +32,19 @@ public class ShoppingCart { private List<Item> items;
     } 
     public List<Item> GetItems() { return items; } 
     }
-public class Item { public string Name { get; } public double Price { get; } public int Quantity { get; }
-public Item(string name, double price, int quantity) { Name = name; Price = price; Quantity = quantity; } } 
+public class Item 
+{ 
+    public string Name { get; } 
+    public double Price { get; } 
+    public int Quantity { get; }
+    public Item(string name, double price, int quantity) { Name = name; Price = price; Quantity = quantity; } 
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("ShoppingCartApp uruchomione.");
+        
+    }
+}
